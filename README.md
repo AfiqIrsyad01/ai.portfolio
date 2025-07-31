@@ -23,16 +23,20 @@ A web system for managing self-service printing requests in a PC shop environmen
 An interactive website for PC components and computer services, featuring user engagement through gamification elements.
 
 ## 🧾 Certifications (Cisco Networking Academy)
+- Python Essentials 1
+- HTML Essentials
+- CSS Essentials
+- C++ Essentials 1
+- Introduction to Cybersecurity
 - Introduction to IoT
-- Operating Systems Basics
 - Computer Hardware Basics
-- HTML & C++ Essentials
-
+- Operating Systems Basics
+- Networking Devices and Initial Configurations
 
 ## 📬 Let's Connect
 
-- **Email**: [muhdafiqirsyad074@gmail.com]
-- **GitHub**: [github.com/yourusername](https://github.com/AfiqIrsyad01)
+- **Email**: [muhdafiqirsyad074@gmail.com](Gmail)
+- **GitHub**: [AfiqIrsyad01](https://github.com/AfiqIrsyad01)
 
 ---
 
