@@ -1,0 +1,612 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+    --primary-color: #00bcd4; /* A vibrant teal/cyan for accents */
+    --secondary-color: #6c757d; /* Muted gray for subtle elements */
+    --dark-bg: #1a1a1a;
+    --dark-alt-bg: #212121; /* Slightly lighter dark for sections */
+    --light-text: #f8f9fa;
+    --secondary-text: #ced4da;
+    --muted-text: #adb5bd;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --dark-font-color: #212529; /* Explicitly dark color for text on light backgrounds */
+    --aesthetic-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* More pronounced shadow for aesthetics */
+    --aesthetic-border-radius: 15px; /* Slightly larger border-radius for aesthetic feel */
+    --card-gradient-start: #333333; /* Darker gradient for card */
+    --card-gradient-end: #1a1a1a;
+
+    /* New: Glow colors */
+    --primary-glow-light: rgba(0, 188, 212, 0.6);
+    --primary-glow-strong: rgba(0, 188, 212, 0.3);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    padding-top: 60px; /* Adjust for fixed header */
+    line-height: 1.7;
+    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold headings */
+    color: var(--light-text);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.text-light-50 {
+    color: var(--muted-text) !important;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-glow-light); /* Subtle glow for titles */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 510px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--dark-alt-bg) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1020; /* Ensure header is above other content */
+    box-shadow: var(--aesthetic-shadow); /* Apply aesthetic shadow */
+}
+
+.shadow-lg {
+    box-shadow: var(--aesthetic-shadow) !important;
+}
+
+.custom-btn {
+    font-weight: 600;
+    border-radius: 50px; /* Pill-shaped buttons */
+    padding: 8px 20px;
+    transition: all 0.3s ease; /* Ensure smooth transitions for all button effects */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    /* Vertically align text and icon for all custom buttons */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; /* Ensures content (icon + text) is centered */
+}
+
+.btn-outline-light {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg) !important;
+    transform: translateY(-2px); /* Subtle hover lift */
+    box-shadow: 0 4px 8px var(--primary-glow-light); /* Added glow on hover */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--dark-font-color); /* Set text to a dark color for visibility */
+}
+
+.btn-primary:hover {
+    background-color: #00a4b8; /* Slightly darker primary on hover */
+    border-color: #00a4b8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--primary-glow-strong); /* Added stronger glow on hover */
+    color: var(--dark-font-color); /* Ensure text remains dark on hover */
+}
+
+.resume-btn {
+    /* Specific styles for resume button */
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--dark-font-color);
+    /* `justify-content: center` is inherited from custom-btn, ensuring alignment */
+}
+
+.resume-btn:hover {
+    background-color: #00a4b8;
+    border-color: #00a4b8;
+    color: var(--dark-font-color);
+}
+
+/* --- Hero Section --- */
+#hero {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #0c0c0c 100%);
+    min-height: calc(100vh - 60px); /* Fill remaining viewport height */
+    margin-top: -60px; /* Pull up to hide header overlap initially */
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 0h3v3H0V0zm3 3h3v3H3V3z'/%3E%3C/g%3E%3C/svg%3E"); /* Subtle pattern */
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none; /* Allows clicks to pass through */
+}
+
+/* Banner/Cover Photo */
+.banner-container {
+    width: 100%;
+    max-width: 900px; /* Adjust max-width as needed */
+    height: 300px; /* Standard banner height - adjust as desired */
+    margin: 0 auto 30px auto; /* Center it and add space below */
+    overflow: hidden;
+    border-radius: var(--aesthetic-border-radius);
+    box-shadow: var(--aesthetic-shadow);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
+}
+
+.banner-container:hover {
+    transform: translateY(-5px) scale(1.01); /* Subtle lift on hover */
+    /* MODIFIED: Added stronger glow on hover for banner */
+    box-shadow: 0 0 25px var(--primary-glow-light), 0 0 50px var(--primary-glow-strong), var(--aesthetic-shadow);
+}
+
+.banner-photo {
+    width: 100%;
+    height: 100%;
+    /* CHANGED: Use 'cover' to fill the container, potentially cropping the image */
+    object-fit: cover; /* */
+    object-position: center; /* */
+    display: block;
+    transition: transform 0.3s ease; /* Ensure smoothness for any transforms */
+}
+
+/* Display Profile Photo - Centering Logic Applied Here */
+.profile-photo-container {
+    position: relative;
+    width: 180px; /* Size of the container */
+    height: 180px;
+    margin: 0 auto; /* This is key for centering the container */
+    border-radius: 50%; /* Make container round */
+    overflow: hidden; /* Ensure image doesn't overflow border */
+    border: 5px solid var(--primary-color); /* Vibrant border */
+    box-shadow: var(--aesthetic-shadow); /* Aesthetic shadow */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
+    display: flex; /* Center image within container */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-alt-bg); /* Background for padding/fill */
+    z-index: 5; /* Ensure it overlaps the banner slightly if desired */
+    margin-top: -80px; /* Pull it up to overlap the banner */
+    margin-bottom: 30px !important; /* Adjust space after photo */
+}
+
+.profile-photo {
+    width: calc(100% - 10px); /* Adjust for border width inside */
+    height: calc(100% - 10px);
+    border-radius: 50%; /* Image itself also rounded */
+    object-fit: cover; /* Ensures photo covers the area without distortion */
+    object-position: center; /* Center the image content */
+    display: block; /* Remove extra space below image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo-container:hover {
+    transform: scale(1.08); /* Only zoom in, no rotation */
+    border-color: #00a4b8; /* Slightly darker border on hover */
+    box-shadow: 0 0 20px var(--primary-glow-light), /* Subtle glow */
+                0 0 40px var(--primary-glow-strong), /* Stronger glow */
+                var(--aesthetic-shadow); /* Keep base shadow */
+}
+
+/* --- Sections --- */
+section {
+    padding: 80px 0; /* More vertical padding */
+    margin-bottom: 40px;
+    background-color: var(--dark-bg); /* Default section background */
+    border-radius: var(--aesthetic-border-radius); /* Smoother corners */
+    box-shadow: var(--aesthetic-shadow); /* Aesthetic shadow for sections */
+    position: relative; /* For aesthetic elements or overlays */
+    overflow: hidden; /* For inner aesthetics */
+    transition: box-shadow 0.3s ease; /* Smooth transition for section shadow */
+}
+
+/* Section background texture/gradient */
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Overlay' fill='%23FFFFFF' fill-opacity='0.03'%3E%3Cpath d='M20 20L22 22L6 22L6 20L20 20ZM2 2L4 4L2 4L2 2ZM40 2L42 4L40 4L40 2ZM40 40L42 42L40 42L40 40ZM2 40L4 42L2 42L2 40ZM20 22L22 24L6 24L6 22L20 22ZM20 20L22 22L6 22L6 20L20 20ZM20 24L22 26L6 26L6 24L20 24ZM20 26L22 28L6 28L6 26L20 26ZM20 28L22 30L6 30L6 28L20 28ZM20 30L22 32L6 32L6 30L20 30ZM20 32L22 34L6 34L6 32L20 32ZM20 34L22 36L6 36L6 34L20 34ZM20 36L22 38L6 38L6 36L20 36ZM20 38L22 40L6 40L6 38L20 38ZM20 40L22 42L6 42L6 40L20 40ZM20 42L22 44L6 44L6 42L20 42ZM20 0L22 2L6 2L6 0L20 0ZM0 20L2 22L0 22L0 20ZM40 20L42 22L40 22L40 20ZM2 0L4 2L2 2L2 0ZM40 0L42 2L40 2L40 0ZM0 2L2 4L0 4L0 2ZM0 40L2 42L0 42L0 40ZM2 42L4 44L2 44L2 42ZM0 42L2 44L0 44L0 42ZM40 42L42 44L40 44L40 42ZM40 22L42 24L40 24L40 22ZM2 22L4 24L2 24L2 22ZM2 24L4 26L2 26L2 24ZM40 24L42 26L40 26L40 24ZM2 26L4 28L2 28L2 26ZM40 26L42 28L40 28L40 26ZM2 28L4 30L2 30L2 28ZM40 28L42 30L40 30L40 28ZM2 30L4 32L2 32L2 30ZM40 30L42 32L40 32L40 30ZM2 32L4 34L2 34L2 32ZM40 32L42 34L40 34L40 32ZM2 34L4 36L2 36L2 34ZM40 34L42 36L40 36L40 34ZM2 36L4 38L2 38L2 36ZM40 36L42 38L40 38L40 36ZM2 38L4 40L2 40L2 38ZM40 38L42 40L40 40L40 38Z' id='Fill-1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.05; /* Subtle */
+    pointer-events: none; /* Allows clicks to pass through */
+    z-index: -1;
+}
+
+.bg-dark-alt {
+    background-color: var(--dark-alt-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border for sections */
+}
+
+/* --- Horizontal Rule --- */
+.custom-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary-color), rgba(0, 0, 0, 0));
+    opacity: 0.6;
+    margin: 80px 0;
+    box-shadow: 0 0 15px var(--primary-glow-strong); /* Glow for the HR */
+    transition: all 0.5s ease-in-out;
+}
+
+.custom-hr:hover {
+    opacity: 1;
+    box-shadow: 0 0 25px var(--primary-glow-light);
+}
+
+/* --- Tables (Projects & Skills) --- */
+.table-dark {
+    --bs-table-bg: var(--dark-alt-bg);
+    --bs-table-striped-bg: #2b2b2b;
+    --bs-table-hover-bg: #383838;
+    color: var(--light-text);
+    border-radius: var(--aesthetic-border-radius); /* Rounded corners for tables */
+    overflow: hidden; /* Ensures rounded corners apply to content */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--aesthetic-shadow); /* Aesthetic shadow for tables */
+    transition: all 0.3s ease; /* Smooth transition for table */
+}
+
+.table-dark:hover {
+    box-shadow: 0 0 25px var(--primary-glow-strong), var(--aesthetic-shadow); /* Glow on table hover */
+}
+
+.table-dark thead th {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace; /* Monospaced font for code/data tables */
+    text-transform: uppercase;
+}
+
+.project-img, .project-video {
+    width: 200px; /* Consistent width for demos */
+    height: 120px; /* Consistent height */
+    object-fit: cover; /* Ensures images/videos cover the area without distortion */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-img:hover, .project-video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--primary-glow-light); /* Glow on project item hover */
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.skill-table tbody tr td {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.skill-table tbody tr td i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* --- Certificates Section --- */
+.cert-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.1rem;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.3;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--dark-font-color);
+    transition: all 0.3s ease; /* Ensure smoothness */
+    box-shadow: 0 4px 8px var(--shadow-color); /* Initial subtle shadow */
+}
+
+.cert-btn:hover {
+    background-color: #00a4b8;
+    border-color: #00a4b8;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 16px var(--primary-glow-light), 0 0 20px var(--primary-glow-strong); /* Added glow on hover */
+    color: var(--dark-font-color);
+}
+
+.cert-btn i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+/* --- Skills Section --- */
+.skill-list .list-group-item {
+    border-color: rgba(255, 255, 255, 0.08); /* Subtle border between skill items */
+    margin-bottom: 10px; /* Spacing between skill items */
+    border-radius: 8px; /* Rounded corners for individual skill items */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.skill-list .list-group-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 16px var(--primary-glow-strong); /* Added glow on hover */
+}
+
+.skill-list h5 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 8px; /* Space between title and description */
+}
+
+.skill-list p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--secondary-text); /* Slightly lighter text for descriptions */
+}
+
+/* --- Contact Section (Business Card Design) --- */
+.contact-card {
+    height: 400px; /* Fixed height for the flipping card */
+    perspective: 1000px; /* For 3D flip effect */
+    transition: all 0.5s ease; /* Smooth transition for the card */
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 30px var(--primary-glow-light), var(--aesthetic-shadow); /* Glow on card hover */
+}
+
+.contact-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: var(--aesthetic-border-radius);
+    box-shadow: var(--aesthetic-shadow);
+}
+
+.contact-card.animate__animated.animate__fadeInDownBig {
+    /* Ensures the initial animation works on the whole card */
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.contact-card-front, .contact-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Hide the back of the card during flip */
+    backface-visibility: hidden;
+    border-radius: var(--aesthetic-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, var(--card-gradient-start), var(--card-gradient-end)); /* Gradient background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-card-back {
+    transform: rotateY(180deg);
+}
+
+.contact-photo-container {
+    position: relative;
+    width: 120px; /* Smaller photo for contact card */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-alt-bg);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
+}
+
+.contact-photo {
+    width: calc(100% - 8px); /* Adjust for border width inside */
+    height: calc(100% - 8px);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.contact-photo-container:hover {
+    transform: scale(1.08);
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px var(--primary-glow-light), 0 0 30px var(--primary-glow-strong); /* Glow on contact photo hover */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-alt-bg) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    color: var(--muted-text);
+    box-shadow: var(--aesthetic-shadow); /* Aesthetic shadow */
+}
+
+/* --- Animations (Animate.css integration) --- */
+/* Ensure elements are initially hidden before animation triggers */
+.animate__animated:not(.header-element):not(.hero-element) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* General animation properties */
+.animate__animated {
+    animation-fill-mode: both; /* Keeps the final state of the animation */
+}
+
+/* Override default to show elements after animation */
+.animate__animated.animate__fadeIn,
+.animate__animated.animate__fadeInUp,
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInDown,
+.animate__animated.animate__zoomIn,
+.animate__animated.animate__pulse,
+.animate__animated.animate__fadeInDownBig,
+.animate__animated.animated { /* Added .animated for robustness */
+    opacity: 1 !important; /* Force visibility after any animation or if active */
+    visibility: visible !important; /* Force visibility after any animation or if active */
+}
+
+/* Safeguard for cert-btns specifically */
+.cert-btn.animate__animated {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Delay for sequential animations */
+.animate__delay-0-1s { animation-delay: 0.1s; }
+.animate__delay-0-2s { animation-delay: 0.2s; }
+.animate__delay-0-3s { animation-delay: 0.3s; }
+.animate__delay-0-4s { animation-delay: 0.4s; }
+.animate__delay-0-5s { animation-delay: 0.5s; }
+.animate__delay-0-6s { animation-delay: 0.6s; }
+.animate__delay-0-7s { animation-delay: 0.7s; }
+.animate__delay-0-8s { animation-delay: 0.8s; }
+.animate__delay-0-9s { animation-delay: 0.9s; }
+.animate__delay-1s { animation-delay: 1s; }
+.animate__delay-1-1s { animation-delay: 1.1s; }
+.animate__delay-1-2s { animation-delay: 1.2s; }
+.animate__delay-1-3s { animation-delay: 1.3s; }
+.animate__delay-1-4s { animation-delay: 1.4s; }
+
+.table-hover tbody tr:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px var(--primary-glow-strong); /* Added glow to table rows */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header .custom-btn {
+        margin-bottom: 8px;
+    }
+    header .h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .custom-btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+    #hero .display-2 {
+        font-size: 2.8rem;
+    }
+    #hero .lead {
+        font-size: 1rem;
+    }
+    .banner-container {
+        height: auto; 
+        padding-top: 56.25%; 
+        margin-bottom: 20px;
+    }
+    .profile-photo-container {
+        width: 140px;
+        height: 140px;
+        margin-top: -60px; 
+        margin-bottom: 25px !important;
+    }
+    .cert-btn {
+        min-width: unset;
+        width: 100%;
+        font-size: 0.9rem;
+        height: auto;
+        padding: 15px 10px;
+    }
+    .skill-list h5 {
+        font-size: 1.1rem;
+    }
+    .skill-list p {
+        font-size: 0.85rem;
+    }
+    .contact-card {
+        height: 350px;
+    }
+    .contact-photo-container {
+        width: 100px;
+        height: 100px;
+    }
+}
