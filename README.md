@@ -31,7 +31,8 @@ An interactive website for PC components and computer services, featuring user e
 - Introduction to IoT
 - Computer Hardware Basics
 - Operating Systems Basics
-- Networking Devices and Initial Configurations
+- Networking Devices and Initial 
+- Network Support and Security
 
 ## 📬 Let's Connect
 
