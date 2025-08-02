@@ -94,49 +94,116 @@
         <section id="projects">
             <div class="container">
                 <h2 class="section-title text-center">My Projects</h2>
-                <div class="table-responsive">
-                    <table class="table table-dark table-striped table-hover project-table shadow-lg">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name of System</th>
-                                <th scope="col">Function</th>
-                                <th scope="col">Date Created</th>
-                                <th scope="col">Screenshot/Video</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Laundry Management System (DBMS)</td>
-                                <td>Comprehensive system for managing laundry orders, customer data, pricing and status updates using a robust database backend.</td>
-                                <td>June 2025</td>
-                                <td>
-                                    <a href="https://drive.google.com/drive/folders/1ufr-S8L0Hv1ZgSY7_HpQe-p0kZ8Izcb2?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                                        <img src="img/laundrysystem.png" class="project-img" alt="Laundry Management System Screenshot">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Self Printing System (PHP + SQL)</td>
-                                <td>Web-based application allowing users to upload documents for self-service printing, managing print queues and user accounts.</td>
-                                <td>June 2025</td>
-                                <td>
-                                    <a href="https://drive.google.com/drive/folders/1-gMkU7nOCx7qMSdFnHDmLGArmOu9O36p?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                                        <img src="img/selfprint.png" class="project-img" alt="Self Printing System Screenshot">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>PC Computer Website (PHP+SQL with Gamification)</td>
-                                <td>An interactive website for PC components and computer services, featuring user engagement through gamification elements and a robust PHP+SQL backend.</td>
-                                <td>June 2025</td>
-                                <td>
-                                    <a href="https://drive.google.com/drive/folders/1OkvPOP27B4jdfoyN1AX_aAjyFRdSjo7c?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                                        <img src="img/pctechstore.png" class="project-img" alt="Self Printing System Screenshot">
-                                    </a>
-                                </td>
-                            </tr>
-                            </tbody>
-                    </table>
+                
+                <!-- Laundry Management System Project -->
+                <div class="project-category mb-4">
+                    <button class="btn btn-primary project-category-btn w-100 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#laundryProject" aria-expanded="false" aria-controls="laundryProject">
+                        <i class="fas fa-tshirt me-2"></i> Laundry Management System (DBMS)
+                    </button>
+                    <div class="collapse" id="laundryProject">
+                        <div class="card card-body bg-dark border-primary">
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover project-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Name of Product</th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>June 2025</td>
+                                            <td>Laundry Management System</td>
+                                            <td>
+                                                <a href="https://drive.google.com/drive/folders/1ufr-S8L0Hv1ZgSY7_HpQe-p0kZ8Izcb2?usp=drive_link" class="btn btn-sm btn-outline-primary" target="_blank">
+                                                    <i class="fas fa-eye me-1"></i> View Project
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="project-description mt-3">
+                                <h5 class="text-primary">Description:</h5>
+                                <p>Comprehensive system for managing laundry orders, customer data, pricing and status updates using a robust database backend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self Printing System Project -->
+                <div class="project-category mb-4">
+                    <button class="btn btn-primary project-category-btn w-100 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#printingProject" aria-expanded="false" aria-controls="printingProject">
+                        <i class="fas fa-print me-2"></i> Self Printing System (PHP + SQL)
+                    </button>
+                    <div class="collapse" id="printingProject">
+                        <div class="card card-body bg-dark border-primary">
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover project-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Name of Product</th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>June 2025</td>
+                                            <td>Self Printing System</td>
+                                            <td>
+                                                <a href="https://drive.google.com/drive/folders/1-gMkU7nOCx7qMSdFnHDmLGArmOu9O36p?usp=drive_link" class="btn btn-sm btn-outline-primary" target="_blank">
+                                                    <i class="fas fa-eye me-1"></i> View Project
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="project-description mt-3">
+                                <h5 class="text-primary">Description:</h5>
+                                <p>Web-based application allowing users to upload documents for self-service printing, managing print queues and user accounts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PC Computer Website Project -->
+                <div class="project-category mb-4">
+                    <button class="btn btn-primary project-category-btn w-100 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#pcWebsiteProject" aria-expanded="false" aria-controls="pcWebsiteProject">
+                        <i class="fas fa-desktop me-2"></i> PC Computer Website (PHP+SQL with Gamification)
+                    </button>
+                    <div class="collapse" id="pcWebsiteProject">
+                        <div class="card card-body bg-dark border-primary">
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover project-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Name of Product</th>
+                                            <th>View</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>June 2025</td>
+                                            <td>PC Computer Website</td>
+                                            <td>
+                                                <a href="https://drive.google.com/drive/folders/1OkvPOP27B4jdfoyN1AX_aAjyFRdSjo7c?usp=drive_link" class="btn btn-sm btn-outline-primary" target="_blank">
+                                                    <i class="fas fa-eye me-1"></i> View Project
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="project-description mt-3">
+                                <h5 class="text-primary">Description:</h5>
+                                <p>An interactive website for PC components and computer services, featuring user engagement through gamification elements and a robust PHP+SQL backend.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -525,4 +592,3 @@
 
 </body>
 </html>
-
