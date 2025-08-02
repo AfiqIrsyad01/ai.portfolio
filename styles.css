@@ -725,3 +725,140 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Projects Section Styles */
+.project-category {
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.project-category-btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--dark-bg);
+}
+
+.project-category-btn::after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    transition: transform 0.3s ease;
+}
+
+.project-category-btn[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.project-category-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3);
+    background-color: #00a4b8;
+    color: var(--dark-bg);
+}
+
+.project-category-btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 188, 212, 0.25);
+}
+
+.project-table {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.project-table th {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.project-table td {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.project-table tr:hover {
+    background-color: rgba(0, 188, 212, 0.1);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+.project-table .btn-outline-primary {
+    border-width: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-table .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.3);
+}
+
+.project-description {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.project-description h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    margin-bottom: 0;
+    color: var(--secondary-text);
+}
+
+/* Animation for dropdown */
+.collapsing {
+    transition: height 0.35s ease;
+}
+
+/* Card styling for dropdown content */
+.card-body {
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-category-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
+    .project-table th, 
+    .project-table td {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .project-table .btn-outline-primary {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
