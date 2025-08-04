@@ -36,8 +36,8 @@ An interactive website for PC components and computer services, featuring user e
 
 ## 📬 Let's Connect
 
-- **Email**: [muhdafiqirsyad074@gmail.com](Gmail)
-- **GitHub**: [AfiqIrsyad01](https://github.com/AfiqIrsyad01)
+- [Email](mailto:muhdafiqirsyad074@gmail.com)
+- [GitHub](https://github.com/AfiqIrsyad01)
 
 ---
 
