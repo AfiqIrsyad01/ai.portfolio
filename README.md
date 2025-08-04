@@ -1,4 +1,4 @@
-# 👨‍💻 Afiq Irsyad | Information System Management Student
+# 👨‍💻 Afiq Irsyad | Information System Management Student [Website](https://afiqirsyad01.github.io/ai.portfolio/)
 
 Hi ! I'm currently pursuing my Degree in Information System Management at UiTM.  
 With hands-on experience in PC assembly, web development, and backend systems, I specialize in creating simple yet functional applications using PHP, SQL, HTML, and CSS.
@@ -23,16 +23,11 @@ A web system for managing self-service printing requests in a PC shop environmen
 An interactive website for PC components and computer services, featuring user engagement through gamification elements.
 
 ## 🧾 Certifications (Cisco Networking Academy)
-- Python Essentials 1
-- HTML Essentials
-- CSS Essentials
-- C++ Essentials 1
-- Introduction to Cybersecurity
-- Introduction to IoT
-- Computer Hardware Basics
-- Operating Systems Basics
-- Networking Devices and Initial 
-- Network Support and Security
+- Networking [Networking Devices and Initial, Network Support and Security]
+- Programming [Python Essentials 1, C++ Essentials 1]
+- Cybersecurity [Introduction to Cybersecurity]
+- Information Technology [Introduction to IoT, Computer Hardware Basics, Operating Systems Basics]
+- Web Development [HTML Essentials, CSS Essentials]
 
 ## 📬 Let's Connect
 
