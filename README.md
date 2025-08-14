@@ -21,6 +21,7 @@ A complete DBMS project to manage customers, orders, and reports. Features inclu
 A web system for managing self-service printing requests in a PC shop environment.
 ### 🧑‍🎓 Computer Store Website with Gamification Function
 An interactive website for PC components and computer services, featuring user engagement through gamification elements.
+
 And more are coming soon....
 
 ## 🧾 Certifications 
