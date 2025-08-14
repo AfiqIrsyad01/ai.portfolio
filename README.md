@@ -1,4 +1,4 @@
-# 👨‍💻 [Afiq Irsyad](https://afiqirsyad01.github.io/ai.portfolio/) | Information System Management Student
+# 👨‍💻 [Afiq Irsyad](https://afiqirsyad01.github.io/ai.portfolio/) | Information System Management Student ![Static Badge](https://img.shields.io/badge/Afiq-Irsyad-green?style=plastic)
 
 Hi ! I'm currently pursuing my Degree in Information System Management at UiTM.  
 With hands-on experience in PC assembly, web development, and backend systems, I specialize in creating simple yet functional applications using PHP, SQL, HTML, and CSS.
