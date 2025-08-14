@@ -6,12 +6,12 @@ With hands-on experience in PC assembly, web development, and backend systems, I
 I'm passionate about helping others through tech — from developing DBMS projects for local businesses to assisting juniors with coding assignments.
 
 ## 🔧 Skills
-- ![Static Badge](https://img.shields.io/badge/Languages-red?style=plastic): PHP, SQL, HTML, CSS, C++, Python, JavaScript (beginner)
-- ![Static Badge](https://img.shields.io/badge/Web%20Tools-green?style=plastic): XAMPP, Bootstrap, GitHub, VS Code
-- ![Static Badge](https://img.shields.io/badge/Database-blue?style=plastic): MySQL, phpMyAdmin
-- ![Static Badge](https://img.shields.io/badge/Multimedia-yellow?style=plastic): Canva, Camtasia Studio, Adobe Premiere Pro, Photoshop
-- ![Static Badge](https://img.shields.io/badge/System%20%26%20Hardware-purple?style=plastic): PC Building, Laptop Maintenance, VPS (Vultr, DigitalOcean)
-- ![Static Badge](https://img.shields.io/badge/Office%20%26%20Analysis-white?style=plastic): MS Word, Excel, PowerPoint, Power BI
+- ![Static Badge](https://img.shields.io/badge/Languages-red?style=plastic) : PHP, SQL, HTML, CSS, C++, Python, JavaScript (beginner)
+- ![Static Badge](https://img.shields.io/badge/Web%20Tools-green?style=plastic) : XAMPP, Bootstrap, GitHub, VS Code
+- ![Static Badge](https://img.shields.io/badge/Database-blue?style=plastic) : MySQL, phpMyAdmin
+- ![Static Badge](https://img.shields.io/badge/Multimedia-yellow?style=plastic) : Canva, Camtasia Studio, Adobe Premiere Pro, Photoshop
+- ![Static Badge](https://img.shields.io/badge/System%20%26%20Hardware-purple?style=plastic) : PC Building, Laptop Maintenance, VPS (Vultr, DigitalOcean)
+- ![Static Badge](https://img.shields.io/badge/Office%20%26%20Analysis-white?style=plastic) : MS Word, Excel, PowerPoint, Power BI
 
 ## 📁 Featured Projects
 
@@ -21,9 +21,10 @@ A complete DBMS project to manage customers, orders, and reports. Features inclu
 A web system for managing self-service printing requests in a PC shop environment.
 ### 🧑‍🎓 Computer Store Website with Gamification Function
 An interactive website for PC components and computer services, featuring user engagement through gamification elements.
+And more are coming soon....
 
 ## 🧾 Certifications 
-Refer to my portfolio website to see all of my certification of completion for Programming and more.
+"Please refer to my portfolio website to see all of my certificates of completion for programming and more."
 
 ## 📬 Let's Connect
 
