@@ -6,12 +6,12 @@ With hands-on experience in PC assembly, web development, and backend systems, I
 I'm passionate about helping others through tech — from developing DBMS projects for local businesses to assisting juniors with coding assignments.
 
 ## 🔧 Skills
-- **Languages**: PHP, SQL, HTML, CSS, C++, Python, JavaScript (beginner)
-- **Web Tools**: XAMPP, Bootstrap, GitHub, VS Code
-- **Database**: MySQL, phpMyAdmin
-- **Multimedia**: Canva, Camtasia Studio, Adobe Premiere Pro, Photoshop
-- **System & Hardware**: PC Building, Laptop Maintenance, VPS (Vultr, DigitalOcean)
-- **Office & Analysis**: MS Word, Excel, PowerPoint, Power BI
+- ![Static Badge](https://img.shields.io/badge/Languages-red?style=plastic): PHP, SQL, HTML, CSS, C++, Python, JavaScript (beginner)
+- ![Static Badge](https://img.shields.io/badge/Web%20Tools-green?style=plastic): XAMPP, Bootstrap, GitHub, VS Code
+- ![Static Badge](https://img.shields.io/badge/Database-blue?style=plastic): MySQL, phpMyAdmin
+- ![Static Badge](https://img.shields.io/badge/Multimedia-yellow?style=plastic): Canva, Camtasia Studio, Adobe Premiere Pro, Photoshop
+- ![Static Badge](https://img.shields.io/badge/System%20%26%20Hardware-purple?style=plastic): PC Building, Laptop Maintenance, VPS (Vultr, DigitalOcean)
+- ![Static Badge](https://img.shields.io/badge/Office%20%26%20Analysis-white?style=plastic): MS Word, Excel, PowerPoint, Power BI
 
 ## 📁 Featured Projects
 
@@ -22,12 +22,8 @@ A web system for managing self-service printing requests in a PC shop environmen
 ### 🧑‍🎓 Computer Store Website with Gamification Function
 An interactive website for PC components and computer services, featuring user engagement through gamification elements.
 
-## 🧾 Certifications (Cisco Networking Academy)
-- Networking [Networking Devices and Initial, Network Support and Security]
-- Programming [Python Essentials 1, C++ Essentials 1]
-- Cybersecurity [Introduction to Cybersecurity]
-- Information Technology [Introduction to IoT, Computer Hardware Basics, Operating Systems Basics]
-- Web Development [HTML Essentials, CSS Essentials]
+## 🧾 Certifications 
+Refer to my portfolio website to see all of my certification of completion for Programming and more.
 
 ## 📬 Let's Connect
 
