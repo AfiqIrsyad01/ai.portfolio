@@ -862,3 +862,191 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+/* Certificate Carousel Styles */
+.cert-carousel-container {
+    background: linear-gradient(45deg, var(--card-gradient-start), var(--card-gradient-end));
+    border-radius: var(--aesthetic-border-radius);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--aesthetic-shadow);
+    transition: all 0.3s ease;
+}
+
+.cert-carousel-container:hover {
+    box-shadow: 0 0 30px var(--primary-glow-light), var(--aesthetic-shadow);
+}
+
+.certificate-card {
+    background-color: var(--dark-alt-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px var(--primary-glow-light);
+}
+
+.certificate-img {
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #000;
+}
+
+.certificate-img:hover {
+    transform: scale(1.02);
+}
+
+.certificate-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certificate-caption h5 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.certificate-caption p {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 188, 212, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 188, 212, 0.6);
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color);
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.carousel-indicators button:hover {
+    opacity: 0.8;
+}
+
+.carousel-instructions p {
+    font-size: 0.9rem;
+}
+
+/* All Certificates Button */
+.all-certificates-section {
+    background: linear-gradient(45deg, var(--card-gradient-start), var(--card-gradient-end));
+    border-radius: var(--aesthetic-border-radius);
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--aesthetic-shadow);
+}
+
+.all-certificates-section .cert-btn {
+    min-width: 300px;
+    height: 60px;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+/* Modal Styling */
+.modal-content.bg-dark {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-alt-bg) 100%);
+    border: 1px solid var(--primary-color);
+}
+
+.modal-header.border-primary {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.modal-footer.border-primary {
+    border-top: 2px solid var(--primary-color);
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cert-carousel-container {
+        padding: 1rem;
+    }
+    
+    .certificate-img {
+        height: 200px;
+    }
+    
+    .certificate-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .certificate-caption p {
+        font-size: 0.8rem;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .all-certificates-section {
+        padding: 1.5rem;
+    }
+    
+    .all-certificates-section .cert-btn {
+        min-width: 100%;
+        font-size: 1rem;
+        height: auto;
+        padding: 12px 20px;
+    }
+}
