@@ -378,29 +378,29 @@ section::before {
 }
 
 /* --- Skills Section --- */
-.skill-list .list-group-item {
-    border-color: rgba(255, 255, 255, 0.08); /* Subtle border between skill items */
-    margin-bottom: 10px; /* Spacing between skill items */
-    border-radius: 8px; /* Rounded corners for individual skill items */
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+/* --- Skills Section (Grid) --- */
+.skill-card {
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, var(--dark-alt-bg), #252525); /* Subtle gradient */
 }
 
-.skill-list .list-group-item:hover {
-    transform: translateX(5px);
-    box-shadow: 0 8px 16px var(--primary-glow-strong); /* Added glow on hover */
+.skill-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px var(--primary-glow-strong); /* Glow on hover */
+    border-color: var(--primary-color) !important; /* Highlight border */
 }
 
-.skill-list h5 {
+.skill-card .icon-box {
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .icon-box {
+    transform: scale(1.1) rotate(5deg); /* Playful icon animation */
+}
+
+.skill-card .card-title {
     font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 8px; /* Space between title and description */
-}
-
-.skill-list p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--secondary-text); /* Slightly lighter text for descriptions */
+    letter-spacing: 0.5px;
 }
 
 /* --- Contact Section (Business Card Design) --- */
