@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }
             }
+
+            // Close mobile menu on clicking a link
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+            }
         });
     });
 
